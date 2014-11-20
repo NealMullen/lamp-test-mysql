@@ -5,7 +5,7 @@
 	<body>
 		<?php
 		try {
-		  $conn = new PDO('mysql:host=192.168.56.104;dbname=test', 'neal', 'zildjian');
+		  $conn = new PDO('mysql:host=192.168.56.104;dbname=test;port=3306', 'neal', 'zildjian');
 		  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		  echo "Connection successful";
 		  if(empty($_GET["page"])):
