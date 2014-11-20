@@ -4,6 +4,7 @@
 	</head>
 	<body>
 		<?php
+		echo $_SERVER['SERVER_ADDR'];
 		try {
 		  $conn = new PDO('mysql:host=192.168.56.104;dbname=test;port=3306', 'neal', 'zildjian');
 		  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
